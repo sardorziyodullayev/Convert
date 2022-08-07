@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div
+      class="container d-flex bg-info mt-5 rounded align-items-center justify-content-around"
+    >
+      <div class="my-5">
+        <p class="text-ticket fs-4">Bilet narxi: 300$</p>
+        <p class="text-hotel fs-4">Mehmonxona narxi: 250€</p>
+        <p class="text-travel fs-4">Sayohat narxi: 150RUB</p>
+        <br />
+        <p class="text-danger fs-3 convert-text"></p>
+      </div>
+
+      <div>
+        <form class="site-form ms-5" autocomplete="off">
+          <div class="my-5 w-100">
+            <label for="money-summ" class="form-label">Summani kiriting</label>
+            <input
+              class="input-form form-control"
+              type="text"
+              id="money-summ"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text">
+              Iltimos, 0dan katta pul maplag'ini kiriting.
+            </div>
+          </div>
+
+          <select
+            class="input-select form-select my-3 w-100"
+            aria-label="Default select example"
+          >
+            <option selected hidden>Iltimos, valyuta turini tanlang.</option>
+            <option value="10885">Dollar</option>
+            <option value="10500">Yevro</option>
+            <option value="450">Rubl</option>
+          </select>
+
+          <button type="submit" class="btn btn-primary">Convert</button>
+        </form>
+
+        <div>
+          <output class="form-output fs-3 my-5"></output>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
